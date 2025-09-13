@@ -1,0 +1,246 @@
+/*==========================================================================
+* Contact One CSS
+==========================================================================*/
+
+.contact__one {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &-title {
+        margin-bottom: 45px;
+        .subtitle-three {
+            color: var(--text-white);
+            &::before {
+                background-color: var(--bg-white);
+            }
+        }
+        h2 {
+            color: var(--text-white);
+        }
+    }
+    &-form {
+        input {
+            background-color: transparent;
+            border-radius: 100px;
+            color: var(--text-white);
+            transition: .4s;
+            padding: 33px 30px;
+            font-size: 18px;
+            &::placeholder {
+                color: var(--text-white);
+            }
+            &:focus {
+                border: 1px solid var(--color-1);
+                color: var(--text-white);
+            }
+        }
+        button {
+            justify-content: center;
+            margin-top: 30px;
+            border: 1px solid var(--primary-color-1);
+            color: var(--text-white) !important;
+            i {
+                color: var(--text-white) !important;
+            }
+        }
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            input {
+                margin-right: 30px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &-counter {
+        background-color: #FFFFFF1A;
+        width: 145px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        color: var(--text-white);
+        span {
+            text-transform: none;
+            font-size: 13px;
+            line-height: 1.76;
+        }
+        .counter-only {
+            display: flex;
+            align-items: center;
+            h3 {
+                color: var(--text-white);
+                font-size: 36px;
+            }
+        }
+        &-img {
+            margin-left: -80px;
+            width: 213px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .contact__one-right {
+        img {
+            display: none;
+        }
+    }
+    .contact__one-counter {
+        width: 100%;
+        text-align: center;
+        padding: 35px 30px;
+        span {
+            font-size: 16px;
+        }
+        .counter-only {
+            justify-content: center;
+            h3 {
+                font-size: 45px;
+            }
+        }
+    }
+    .contact__one-form-top {
+        flex-direction: column;
+        row-gap: 25px;
+        input {
+            margin-right: 0;
+        }
+    }
+}
+
+
+/*==========================================================================
+* Contact Two CSS
+==========================================================================*/
+
+.contact__two {
+    &-title {
+        h2 {
+            text-transform: none;
+            margin-bottom: 30px;
+        }
+        p {
+            color: var(--color-2);
+            margin-bottom: 35px;
+            text-transform: none;
+        }
+    }
+    &-form {
+        textarea {
+            margin-bottom: 30px;
+            height: 130px;
+        }
+        .btn-two {
+            border-radius: 5px;
+            border: 1px solid var(--primary-color-1);
+        }
+    }
+    &-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 70px;
+    }
+    &-single-info {
+        background-color: var(--color-1);
+        padding: 30px 5px;
+        border-radius: 5px;
+        transition: 0.4s;
+        text-align: center;
+        width: 43%;
+        margin-right: 28px;
+        margin-bottom: 28px;
+        &-icon {
+            background-color: var(--bg-white);
+            width: 65px;
+            height: 65px;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 65px;
+        }
+        &-content {
+            h4 {
+                font-size: 22px;
+                margin-bottom: 7px;
+            }
+            span {
+                color: var(--color-2);
+                display: block;
+                font-size: 14px;
+                text-transform: none;
+                margin-bottom: 7px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .contact__two-single-info {
+        width: 46%;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contact__two-contact-info {
+        margin-left: 0;
+    }
+    .contact__two-single-info {
+        width: 35%;
+        padding: 30px 46px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact__two-single-info {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact__two-single-info:nth-last-child(2) {
+        margin-bottom: 15px;
+    }
+    .contact__two-single-info {
+        width: 100%;
+    }
+}
+
+
+
+
+/*==========================================================================
+* Contact Location Map 
+==========================================================================*/
+
+.location-map {
+    height: 651px;
+    margin-bottom: -6.5%;
+    filter: grayscale(1);
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,1047 @@
+/*------------------------------------------------------------------------
+
+Template Name:  Bantec - IT Service & Technology HTML5 Template
+Author:  ThemeOri
+Author URI: http://themeori.com
+Version: 1.0.2
+Description: This Template is created for web template
+
+--------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------
+
+* Google Fonts
+* Common CSS
+* Form CSS
+* Hedging CSS
+* Bantec Button And Title Styles CSS
+Highlighted Text Styles
+* Scroll Top CSS
+* Preloader CSS
+* Animation CSS
+* Bantec Color CSS
+* Space And Container CSS
+* Top Bar CSS
+* Menu Bar Sticky CSS
+* Menu Bar CSS
+* Menu Sidebar CSS
+* Banner One CSS
+* Banner Two CSS
+* Banner Three CSS
+* Banner Four CSS
+* Banner Five CSS
+* Page Banner CSS
+* About Area One CSS
+* About Area Two CSS
+* About Area Three CSS
+* About Area Four CSS
+* About Area Five CSS
+* Brand Area CSS
+* Skill Style 1 Area Style
+* Skill Style 1 Area Style
+* Services One Style
+* Services Two Style
+* Services Three Style
+* Service One Style
+* Service Five Style
+* Service Details CSS
+* Portfolio One Style
+* Portfolio Two CSS
+* Project Details CSS
+* Team One Style
+* Team Two Style
+* Horizontal Scroll Animation
+* Contact One CSS
+* Contact Two CSS
+Contact Location Map 
+* Why Choose Us Style 
+* Why Choose Us two CSS
+* Why Choose Us three Style
+* Why Choose Us four Style
+* Pricing Plan One CSS
+* Pricing Plan Two CSS
+* Work Process One Style
+* Work Process Two style 
+* Work Process Three style 
+* Work Process Four style 
+* Counter One Style
+* FAQ Style One
+* FAQ Style Two
+* FAQ Style Three
+* Blog One Style
+* Blog Two Style
+* Blog Three Style
+* Blog Four Style
+* Blog With Sidebar Style
+* Blog Sidebar Style
+* Blog Five Style
+* Blog Details Style
+* Testimonial One Style
+* Testimonial Two Style
+* Testimonial Three Style
+* Testimonial Four Style
+* Testimonial Five Style
+* Testimonial Six Style
+* Video One Start Here
+* About Area Five CSS
+* Subscribe One, Two Three CSS
+* Footer One CSS
+* Footer Two CSS
+* Footer Three CSS
+* Footer Four CSS
+* Footer Five CSS
+* Footer Copyright CSS
+* 404 CSS
+
+/*==========================================================================
+* Google Fonts
+==========================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+/*==========================================================================
+* Common CSS
+==========================================================================*/
+body {
+	font-family: var(--body-font);
+	color: var(--body-color);
+	font-size: 16px;
+	line-height: 26px;
+  	font-weight: 400;
+	text-transform: capitalize;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	transition: 0.4s;
+}
+a {  
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+a,
+button,
+i {
+	text-decoration: none;
+	color: inherit;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.section-padding {
+	padding: 120px 0px;
+}
+@media (max-width: 991px) {
+	.section-padding {
+		padding: 80px 0px;
+	}
+}
+@media (max-width: 575px) {
+	.section-padding {
+		padding: 60px 0px;
+	}
+}
+.display-none {
+	display: none;
+}
+.display-block {
+	display: block;
+}
+.filter img {
+	filter: grayscale(100%);
+}
+.img__full {
+	width: 100%;
+}
+/*==========================================================================
+* Form CSS
+==========================================================================*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid var(--border-color-2);
+	border-color: transparent;
+	border-radius: 6px;
+	background: var(--primary-color-1);
+	color: var(--text-white);
+	padding: 17px 40px;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  	border-color: transparent;
+}
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  	border-color: transparent;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: var(--body-color);
+	border-radius: 5px;
+	width: 100%;
+	height: 60px;
+	border: 1px solid var(--color-4);
+	padding: 0 15px;
+	background: var(--bg-white);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: var(--text-heading-color);
+	outline: none;
+	box-shadow: none;
+	border-color: var(--primary-color-1);
+}
+select {
+	border: 1px solid var(--border-color-2);
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	padding-top: 15px;
+}
+button,
+button:hover,
+button:focus {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+/*==========================================================================
+* Hedging CSS
+==========================================================================*/
+$list: (h1, 70px, 1.3, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h2, 60px, 1.13, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h3, 32px, 1.25, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h4, 22px, 1.63, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h5, 18px, 1.66, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h6, 22px, 32px, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(p, 18px, 30px, 0, 0);
+@each $name, $size, $height, $p, $m, $color, $font, $weight in $list {
+    #{$name}{
+      font-size: $size;
+      line-height: $height;
+      padding: $p;
+      margin: $m;
+      color: $color;
+      font-family: $font;
+      font-weight: $weight;
+    }
+}
+$list: left, center, right;
+@each $i in $list {
+    .t-#{$i} {
+        text-align: $i;
+    }
+}
+@media (max-width: 1399px) {
+	h2 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+}
+@media (max-width: 767px) {
+	h2 {
+		font-size: 38px;
+		line-height: 50px;
+	}
+}
+@media (max-width: 420px) {
+	h2 {
+		font-size: 31px;
+		line-height: 41px;
+	}
+	h3 {
+		font-size: 28px;
+		line-height: 38px;
+	}
+}
+@media (max-width: 359px) {
+	h2 {
+		font-size: 27px;
+		line-height: 37px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	h4 {
+		font-size: 21px;
+		line-height: 31px;
+	}
+	h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h6 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+/*==========================================================================
+* Bantec Button And Title Styles CSS
+==========================================================================*/
+.subtitle-one,
+.subtitle-two,
+.subtitle-three,
+.subtitle-four {
+	position: relative;
+    text-transform: capitalize;
+    font-family: var(--heading-font);
+    color: var(--primary-color-1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-block;
+    margin-bottom: 14px;
+    background: #0E59F21A;
+    padding: 1px 25px;
+    border-radius: 10px;
+}
+.subtitle-two {
+    background: #0E59F23D;
+}
+.subtitle-three {
+	&::before {
+		content: "";
+		width: 25px;
+		height: 1px;
+		position: absolute;
+		background: var(--primary-color-1);
+		right: -35px;
+		top: 15px;
+	}
+}
+.subtitle-four {
+	&::after {
+		content: "";
+		width: 25px;
+		height: 1px;
+		position: absolute;
+		background: var(--primary-color-1);
+		left: -35px;
+		top: 15px;
+	}
+	&::before {
+		content: "";
+		width: 25px;
+		height: 1px;
+		position: absolute;
+		background: var(--primary-color-1);
+		right: -35px;
+		top: 15px;
+	}
+}
+.btn-one,
+.btn-two,
+.btn-three,
+.btn-four,
+.btn-five,
+.btn-six,
+.btn-seven,
+.btn-eight,
+.btn-nine {
+	background: transparent;
+    color: var(--text-heading-color);
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 16px 28px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    z-index: 3;
+    position: relative;
+    transition: 0.4s;
+    text-transform: capitalize;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color-1);
+	i {
+		position: relative;
+		top: 0px;
+		margin-left: 10px;
+		font-size: 15px;
+		transition: 0.2s;
+	}
+    &:hover {
+        background-color: var(--primary-color-1);
+		color: var(--text-white);
+		i {
+			transform: translateX(2px);
+			color: var(--text-white);
+		}
+    }
+}
+.btn {
+	&-two {
+		background: var(--primary-color-1);
+		color: var(--text-white);
+		text-transform: none;
+		&:hover {
+			background-color: transparent;
+			color: var(--text-heading-color);
+			i {
+				color: var(--text-heading-color);
+			}
+		}
+	}	
+	&-three {
+		background: transparent;
+		border: 0;
+		padding: 0;
+		padding-right: 10px;
+		border-radius: 0;
+		&:hover {
+			background-color: transparent;
+			color: var(--primary-color-1);
+			i {
+				color: var(--primary-color-1);
+			}
+		}
+	}
+	&-four {
+		background: var(--btn-heading-color);
+		&::before {
+			background: var(--btn-white);
+		}
+		&:hover {
+			color: var(--btn-heading-color);
+		}
+	}
+	&-five {
+		background: var(--primary-color-2);
+		color: var(--text-white);
+		border-radius: 30px;
+		&::before {
+			background: var(--btn-white);
+		}
+		&:hover {
+			color: var(--btn-heading-color);
+		}
+		&:focus {
+			color: var(--btn-heading-color);
+		}
+	}
+	&-six {
+		background: transparent;
+		border: 1px solid var(--primary-color-2);
+		color: var(--primary-color-2);
+		border-radius: 30px;
+		&:hover {
+			border-color: var(--text-white);
+		}
+		&::before {
+			background: var(--btn-white);
+		}
+		&:focus {
+			color: var(--primary-color-2);
+		}
+	}
+	&-seven {
+		background: var(--primary-color-3);
+		&::before {
+			background: var(--btn-heading-color);
+		}
+	}
+	&-eight {
+		background: transparent;
+		color: var(--primary-color-3);
+		border: 1px solid var(--primary-color-3);
+		padding: 16px 42px;
+		&:hover {
+			border-color: var(--btn-heading-color);
+		}
+		&::before {
+			background: var(--btn-heading-color);
+		}
+		&:focus {
+			color: var(--primary-color-3);
+		}
+	}
+	&-nine {
+		background: var(--btn-white);
+		color: var(--text-white);
+		&:hover {
+			color: var(--text-white);
+		}
+		&::before {
+			background: var(--btn-heading-color);
+		}
+		&:focus {
+			color: var(--primary-color-3);
+		}
+	}
+}
+.simple-btn-1,
+.simple-btn-2,
+.simple-btn-3 {
+	color: var(--primary-color-1);
+	display: inline-block;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 700;
+	font-family: var(--heading-font);
+	transition: 0.4s;
+	text-transform: uppercase;
+	i {
+		position: relative;
+		top: 0;
+		margin-left: 15px;
+		font-size: 13px;
+	}
+    &:hover {
+        color: var(--btn-heading-color);
+    }
+	&:focus {
+		color: var(--btn-heading-color);
+	}
+}
+.simple-btn {
+	&-2 {
+		color: var(--text-heading-color);
+		&:hover {
+			color: var(--primary-color-1);
+		}
+	}
+	&-3 {
+		color: var(--text-white);
+		&:hover {
+			color: var(--primary-color-1);
+		}
+	}
+}
+/*==========================================================================
+* Highlighted Text Styles
+==========================================================================*/
+.highlighted {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 8px;
+        background: var(--primary-color-2);
+        position: absolute;
+        bottom: 13%;
+        left: 5px;
+        z-index: -1;
+		animation: highlightAnimation 4s infinite;
+    }
+}
+
+@keyframes highlightAnimation {
+	0% {
+	  width: 0;
+	}
+	15% {
+	  width: 100%;
+	}
+	85% {
+	  opacity: 1;
+	}
+	90% {
+	  width: 100%;
+	  opacity: 0;
+	}
+	to {
+	  width: 0;
+	  opacity: 0;
+	}
+}
+
+.highlighted-two {
+    position: relative;
+    display: inline-block;
+	color: var(--primary-color-1);
+	&::before {
+		content: "";
+		width: 108%;
+		height: 60px;
+		position: absolute;
+		border: 2px solid transparent;
+		border-top: 2px solid var(--primary-color-1);
+		border-radius: 50%;
+		top: 58px;
+		left: -10px;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 480px) {
+	.highlighted-two::before {
+		top: 40px;
+	}
+}
+
+/*==========================================================================
+* Scroll Top CSS
+==========================================================================*/
+.scroll-up {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset  0 0 0 2px var(--color-8);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
+    transition: all 200ms linear;
+	&::after {
+		position: absolute;
+		font-family: 'Font Awesome 5 Pro';
+		content: "\f176";
+		text-align: center;
+		line-height: 50px;
+		font-size: 24px;
+		color: var(--primary-color-1);
+		left: 0;
+		top: 0;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: all 200ms linear;
+	}
+	&.active-scroll {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	svg path { 
+		fill: none; 
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-1);
+		stroke-width: 4;
+		box-sizing:border-box;
+		transition: all 200ms linear;
+	}
+}
+.scroll-two {
+	&::after {
+		color: var(--primary-color-2);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-2);
+	}
+}
+.scroll-three {
+	&::after {
+		color: var(--primary-color-3);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-3);
+	}
+}
+/*==========================================================================
+* Preloader CSS
+==========================================================================*/
+.loader {
+    z-index: 9999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #dbe5f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container, .loader-container:before, .loader-container:after {
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	animation-fill-mode: both;
+	animation: bblFadInOut 1.8s infinite ease-in-out;
+  }
+  .loader-container {
+	color: var(--primary-color-1);
+	font-size: 7px;
+	position: relative;
+	text-indent: -9999em;
+	transform: translateZ(0);
+	animation-delay: -0.16s;
+  }
+  .loader-container:before,
+  .loader-container:after {
+	content: '';
+	position: absolute;
+	top: 0;
+  }
+  .loader-container:before {
+	left: -4.5em;
+	animation-delay: -0.32s;
+  }
+  .loader-container:after {
+	left: 4.5em;
+  }
+  
+  @keyframes bblFadInOut {
+	0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+	40% { box-shadow: 0 2.5em 0 0 }
+  }
+	  
+		
+/*==========================================================================
+* Animation CSS
+==========================================================================*/
+.video {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	z-index: 4;
+	a {
+		position: relative;
+		color: var(--primary-color-2);
+		font-size: 20px;
+		z-index: 1;
+		background: var(--bg-white);
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+		border-radius: 50%;
+		display: block;                
+	}          
+}
+.video-pulse::after, .video-pulse::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--border-white);
+	opacity: 0.3;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-name: video-animation;
+	animation-iteration-count: infinite;
+}
+.video-pulse::before {
+	animation-delay: 1s;
+}
+@keyframes video-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+/*============** Custom Animation **============*/
+
+.animate-y-axis {
+    -webkit-animation-name: y-axis;
+    animation-name: y-axis;
+    -webkit-animation-duration: 11s;
+    animation-duration: 11s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes y-axis {
+    0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes y-axis {
+    0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+}
+
+.animate-y-axis-slider {
+    -webkit-animation-name: y-axis-slider;
+    animation-name: y-axis-slider;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes y-axis-slider {
+    0% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes y-axis-slider {
+    0% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+}
+/*==== Animation x-axis ==== */
+.animate-x-axis {
+    -webkit-animation-name: x-axis;
+    animation-name: x-axis;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes x-axis {
+    0% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes x-axis {
+    0% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+}
+/*==== Animation Rotate ==== */
+.animate-rotate {
+    animation-name: rotate;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 24s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 24s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotate;
+    -ms-animation-duration: 24s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: rotate;
+    -o-animation-duration: 24s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*==== Animate zoom-in-out  ====*/
+.animate-zoom-in-out {
+    animation-name: zoomInOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: zoomInOut;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: zoomInOut;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-name: zoomInOut;
+    -ms-animation-duration: 3s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-name: zoomInOut;
+    -o-animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes zoomInOut {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.7);
+        transform: rotate(0deg) scale(0.7);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg) scale(1);
+        transform: rotate(180deg) scale(1);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.7);
+        transform: rotate(360deg) scale(0.7);
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.7);
+        transform: rotate(0deg) scale(0.7);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg) scale(1);
+        transform: rotate(180deg) scale(1);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.7);
+        transform: rotate(360deg) scale(0.7);
+    }
+}
+
+.halfRotationAnimation {
+	animation: halfRotationAnimation 5s infinite ease-in-out;
+}
+
+@keyframes halfRotationAnimation {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.swiper-button-prev::after {
+	display: none;
+}
+.swiper-button-next::after {
+	display: none;
+}

@@ -1,0 +1,185 @@
+/*==========================================================================
+* Pricing Plan One CSS
+==========================================================================*/
+
+.pricing-plan__one {
+    &-title {
+        margin-bottom: 50px;
+        h2 {
+            text-transform: none;
+        }
+    }
+    &-single-pricing-wrapper {
+        border-radius: 5px;
+        transition: .4s;
+        box-shadow: 0px 0px 60px 0px rgba(0,0,0,.05);
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    &-single-pricing-plan {
+        background: var(--bg-white);
+        padding: 45px 35px 38px 35px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "";
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: var(--color-1);
+            position: absolute;
+            top: -23pc;
+            left: -10pc;
+            z-index: 0;
+            transition: .5s;
+        }
+        &.active {
+            &::before {
+                background: var(--primary-color-1);
+            }
+            .pricing-plan__one-single-pricing-plan-title {
+                color: var(--text-white);
+            }
+        }
+        &-title {
+            margin-bottom: 58px;
+            z-index: 1;
+            position: relative;
+        }
+        &-price {
+            margin-bottom: 15px;
+            span {
+                text-transform: lowercase;
+                font-size: 18px;
+                color: var(--color-2);
+            }
+        }
+        p {
+            color: var(--color-2);
+            text-transform: none;
+            margin-bottom: 27px;
+            width: 86%;
+        }
+        &-benefits {
+            margin-bottom: 45px;
+            span {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 13px;
+                color: var(--color-2);
+                i {
+                    color: var(--primary-color-1);
+                    margin-right: 10px;
+                    transition: .3s;
+                }
+            }
+        }
+        &:hover {
+            &::before {
+                top: -22pc;
+                left: -9pc;
+            }
+        }
+    }
+    .btn-one {
+        border-color: var(--color-4);
+        justify-content: center;
+    }
+    .tab-content>.active {
+        display: flex;
+    }
+    .nav-pills .nav-link {
+        padding: 7px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        background: var(--color-1);
+        color: var(--text-heading-color);
+        margin-left: 20px;
+    }
+    .nav-pills .nav-link.active {
+        background-color: var(--primary-color-1);
+        color: var(--text-white);
+    }
+}
+
+
+/*==========================================================================
+* Pricing Plan Two CSS
+==========================================================================*/
+
+.pricing-plan__two {
+    background: linear-gradient(var(--color-1) 60%, var(--bg-white) 40%);
+    &-title {
+        margin-bottom: 70px;
+        h2 {
+            text-transform: none;
+        }
+    }
+    &-single-pricing-wrapper {
+        background: linear-gradient(var(--color-6), transparent);
+        padding: 2px;
+        border-radius: 5px;
+        transition: .4s;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    &-single-pricing-plan {
+        background: var(--bg-white);
+        padding: 45px 35px 38px 35px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: rgb(14 30 37 / 2%) 0px 2px 4px 0px, rgb(14 30 37 / 3%) 0px 2px 16px 0px;
+        &-title {
+            margin-bottom: 18px;
+        }
+        &-price {
+            margin-bottom: 40px;
+            span {
+                text-transform: lowercase;
+                font-size: 18px;
+                color: var(--color-2);
+            }
+        }
+        p {
+            color: var(--color-2);
+            max-width: 261px;
+            text-transform: none;
+            margin-bottom: 27px;
+        }
+        &-benefits {
+            margin-bottom: 95px;
+            span {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 18px;
+                color: var(--color-2);
+                i {
+                    color: var(--primary-color-1);
+                    margin-right: 10px;
+                    transition: .3s;
+                }
+            }
+        }
+        .btn-one {
+            justify-content: center;
+            i {
+                color: var(--primary-color-1);
+            }
+            &:hover {
+                background: var(--primary-color-2);
+                border-color: var(--primary-color-2);
+                color: var(--text-heading-color);
+                i {
+                    color: var(--text-heading-color);
+                }
+            }
+        }
+    }
+}
+
+

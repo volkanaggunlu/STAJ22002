@@ -1,0 +1,219 @@
+/*==========================================================================
+* Team One Style
+==========================================================================*/
+
+.team__one {
+	background: linear-gradient(var(--bg-white) 60%, var(--color-1) 40%);
+    &.bg-color-2 {
+        background: var(--color-1);
+    }
+    &-title {
+        margin-bottom: 60px;
+        h2 {
+            text-transform: none;
+        }
+    }
+    &-team-item {
+        position: relative;
+        border-radius: 30px;
+        transition: .4s;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &-content {
+            background: var(--bg-white);
+            width: 85%;
+            border-radius: 20px;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+            position: relative;
+            margin: auto;
+            margin-top: -4pc;
+            h3 {
+                font-size: 22px;
+            }
+            span {
+                color: var(--color-2);
+            }
+        }
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+    &-social-wrapper {
+        background: transparent;
+        border: 1px solid var(--primary-color-1);
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: var(--primary-color-1);
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: var(--primary-color-1);
+            color: var(--text-white);
+            .share-links {
+                opacity: 1;
+                visibility: visible;
+                color: var(--text-heading-color);
+            }
+        }
+        .share-links {
+            position: absolute;
+            top: -150px;
+            right: 22px;
+            opacity: 0;
+            transition: .3s linear;
+            visibility: hidden;
+            .inner-link {
+                background: var(--color-1);
+                height: 35px;
+                width: 35px;
+                font-size: 14px;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 5px;
+                color: var(--text-heading-color);
+                display: block;
+                margin-bottom: 10px;
+                transition: .4s;
+                &:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .team__one {
+        &-team-item {
+            &-content {
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .team__one-team-item-content {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+
+
+/*==========================================================================
+* Team Two Style
+==========================================================================*/
+
+.team__two {
+    &-title {
+        h2 {
+            text-transform: none;
+        }
+    }
+    &-team-item {
+        position: relative;
+        border-radius: 30px;
+        transition: .4s;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &-content {
+            background: var(--bg-white);
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+            position: relative;
+            border: 1px solid var(--color-4);
+            border-radius: 0 0 20px 19px;
+            margin-top: -30px;
+            h3 {
+                font-size: 22px;
+            }
+            span {
+                color: var(--color-2);
+            }
+            .share-link-wrapper {
+                background: var(--primary-color-1);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 5px;
+                color: var(--text-white);
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    border-radius: 0 0 5px 5px;
+                    .share-links {
+                        opacity: 1;
+                        visibility: visible;
+                        color: var(--text-heading-color);
+                    }
+                }
+                .share-links {
+                    position: absolute;
+                    bottom: 77px;
+                    right: 30px;
+                    opacity: 0;
+                    transition: 0.3s linear;
+                    visibility: hidden;
+                    background: rgba(255, 255, 255, 0.8392156863);
+                    border-radius: 5px 5px 0 0;
+                    padding: 7px 0;
+                    .inner-link {
+                        height: 35px;
+                        width: 40px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 35px;
+                        color: var(--text-heading-color);
+                        display: block;
+                        transition: .3s;
+                        &:hover {
+                            color: var(--primary-color-1);
+                        }
+                    }
+                }
+            }
+        }
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .team__one {
+        &-team-item {
+            &-content {
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .team__two-team-item-content {
+        padding: 15px 25px;
+    }
+    .team__two-team-item-content > i .share-links {
+        bottom: 68px;
+        right: 25px;
+    }
+}

@@ -1,0 +1,44 @@
+/*==========================================================================
+* About Area Five CSS
+==========================================================================*/
+
+.technology-solution__one {
+    &-image {
+        position: relative;
+        &-wrapper {
+            padding: 0 20px;
+        }
+    }
+    &-content {
+        h2 {
+            text-transform: none;
+            margin-bottom: 30px;
+        }
+        p {
+            color: var(--color-2);
+            margin-bottom: 30px;
+            width: 90%;
+        }
+        .satisfied-customer-counter {
+            display: flex;
+            align-items: center;
+            background: var(--color-1);
+            width: fit-content;
+            padding: 15px 0 15px 25px;
+            border-radius: 20px;
+            .counter-wrapper {
+                display: flex;
+                margin-right: 10px;
+                h3 {
+                    font-size: 48px;
+                    color: var(--primary-color-1);
+                }
+            }
+            span {
+                font-size: 18px;
+                width: 28%;
+                font-weight: 500;
+            }
+        }
+    }
+}

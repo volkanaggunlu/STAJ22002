@@ -1,0 +1,32 @@
+/* Global overrides for legacy template */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Make Swiper autoplay scroll smoothly like a marquee */
+.swiper.brand__slider .swiper-wrapper,
+.horizontal-scroll-active .swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+/* Force single-line titles in horizontal scroll */
+.horizontal-scroll-single-item h3 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+/* Ensure multiple slides appear at once for horizontal scroll */
+.horizontal-scroll-active .slick-slide {
+	width: auto;
+}
+
+/* Brand slider item spacing */
+.brand__slider .brand__area-item {
+	padding: 0 15px;
+}
+
+/* Place any global overrides here as needed during migration. */ 

@@ -1,0 +1,154 @@
+/*==========================================================================
+* Top Bar CSS
+==========================================================================*/
+.top__bar {
+    background: var(--bg-heading-color);
+    padding: 13px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &-left {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: start;
+        a {
+            font-size: 18px;
+            margin-right: 27px;
+            text-transform: lowercase;
+            color: var(--text-heading-color);
+            color: var(--text-white);
+            i {
+                font-size: 16px;
+                margin-right: 5px;
+                color: var(--primary-color-1);
+            }
+        }
+    }
+    &-right {
+        text-align: right;
+        a {
+            font-size: 18px;
+            text-transform: capitalize;
+            color: var(--text-white);
+            i {
+                font-size: 16px;
+                color: var(--primary-color-1);
+                margin-right: 5px;
+            }
+        }
+    }
+    &.two {
+        background: linear-gradient(135deg, var(--primary-color-1) 39%, var(--color-7) 0%);
+        .top__bar-left {
+            justify-content: end;
+            span {
+                font-size: 18px;
+                margin-right: 27px;
+                text-transform: capitalize;
+                color: var(--text-heading-color);
+                color: var(--text-white);
+                i {
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+            a {
+                i {
+                    color: var(--text-white);
+                }
+            }
+        }
+        .top__bar-right {
+            text-align: left;
+            a {
+                i {
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+    &.four {
+        background: var(--primary-color-1);
+        .top__bar-left {
+            span {
+                font-size: 18px;
+                margin-right: 27px;
+                text-transform: capitalize;
+                color: var(--text-heading-color);
+                color: var(--text-white);
+                i {
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+            a {
+                i {
+                    color: var(--text-white);
+                }
+            }
+        }
+        .top__bar-right {
+            a {
+                i {
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .top__bar {
+        &-left {
+            a {
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .top__bar {
+        &-left {
+            justify-content: center;
+            margin-bottom: 15px;
+            a {
+                font-size: 16px;
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-right {
+            text-align: center;
+            a {
+                font-size: 16px;
+                text-transform: capitalize;
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .top__bar.two .top__bar-right {
+        text-align: center;
+    }
+    .top__bar.two .top__bar-left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .top__bar {
+        &-left {
+            margin-bottom: 5px;
+            a {
+                margin-bottom: 3px;
+            }
+        }
+    }    
+}

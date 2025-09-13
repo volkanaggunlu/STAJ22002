@@ -1,0 +1,466 @@
+/*==========================================================================
+* Work Process One Style
+==========================================================================*/
+
+.work-process-area__one {
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    &-title {
+        h2{
+            max-width: 94%;
+            text-transform: none;
+            color: var(--bg-white);
+            margin-bottom: 59px;
+        }
+        p {
+            text-transform: none;
+            margin-bottom: 60px;
+            color: var(--bg-white);
+            opacity: .6;
+            width: 98%;
+        }
+    }
+    &-single-work {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        border: 2px solid var(--color-5);
+        padding: 29px 29px;
+        border-radius: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        span {
+            background: var(--primary-color-1);
+            color: var(--text-white);
+            width: 65px;
+            font-size: 32px;
+            height: 65px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 18px;
+            font-weight: 700;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4 {
+            color: var(--bg-white);
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: var(--bg-white);
+            text-transform: none;
+            opacity: .6;
+        }
+        &-content {
+            width: calc(100% - 65px);
+        }
+    }
+    &-right-counter-img {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 35px;
+        .img-counter {         
+            background: var(--color-3);
+            padding: 32px 35px;
+            border-radius: 20px 0 0 20px;
+            width: 35%;
+            .counter-only {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+            h2 {
+                color: var(--bg-white);
+            }
+            span {
+                font-size: 22px;
+                color: var(--bg-white);
+                text-transform: lowercase;
+                line-height: 1.63;
+            }
+        }
+        img {
+            width: 65%;
+        }
+    }
+    &-right-img {
+        margin-left: 36px;
+        max-width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .works-process-area__one-single-work {
+        padding: 16px 10px;
+    }
+}
+@media (max-width: 1199px) {
+    .work-process-area__one-right-img {
+        margin-left: 0;
+    }
+    .work-process-area__one-right-counter-img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .works-process-area__one {
+        padding-top: 100px;
+        padding-bottom: 170px;
+    }
+    .work-process-area__one-single-work {
+        flex-direction: column;
+        text-align: center;
+    }
+    .work-process-area__one-single-work span {
+        margin-bottom: 20px;
+    }
+    .work-process-area__one-title h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 535px) {
+    .work-process-area__one-right-counter-img {
+        flex-direction: column;
+    }
+    .work-process-area__one-right-counter-img .img-counter {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .work-process-area__one-right-counter-img img {
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+ 
+
+
+
+/*==========================================================================
+* Work Process Two style 
+==========================================================================*/
+
+.work-process__two {
+    &-title {
+        margin-bottom: 60px;
+        h2 {
+            text-transform: none;
+            margin-bottom: 60px;
+        }
+    }
+    &-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-single {
+            border: 1px solid var(--color-4);
+            margin-right: 25px;
+            padding: 35px 38px;
+            border-radius: 20px;
+            position: relative;
+            outline: 7px solid var(--text-white);
+            background-color: var(--bg-white);
+            transition: .4s;
+            &:last-child {
+                margin: 0;
+            }
+            &-title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                &-left {
+                    h4 {
+                        font-size: 22px;
+                    }
+                    span {
+                        margin-bottom: 12px;
+                        display: inline-block;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: var(--color-4);
+                    }
+                }
+                &-right {
+                    font-size: 40px;
+                    color: var(--primary-color-1);
+                } 
+            }
+            p {
+                color: var(--color-2);
+                text-transform: none;
+                margin-bottom: 28px;
+            }
+            a {
+                i {
+                    color: var(--primary-color-1);
+                }
+            }
+            .card-arrow-wrapper {
+                position: absolute;
+                right: -69px;
+                z-index: -1;
+                bottom: -45px;
+                .card-arrow-ingredient {
+                    position: relative;
+                    .arrow-head {
+                        width: 0;
+                        height: 0;
+                        border: 6px solid transparent;
+                        border-bottom: 12px solid var(--primary-color-1);
+                        position: absolute;
+                        top: 60px;
+                        right: -1px;
+                        transform: rotate(37deg);
+                    }
+                    .arrow-body{
+                        width: 160px;
+                        height: 103px; 
+                        background: transparent;
+                        border-radius: 50%;
+                        border: 2px dashed var(--primary-color-1);
+                        border-top: 2px solid var(--text-white);
+                        transition: .4s;
+                        z-index: -1;
+                    }
+                }
+            }
+            &:hover {
+                border: 1px solid var(--primary-color-1);
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .work-process__two-cards {
+        display: block;
+    }
+    .work-process__two-cards-single {
+        margin-right: 0;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .work-process__two-cards-single .card-arrow-wrapper {
+        display: none;
+    }
+}
+
+
+/*==========================================================================
+* Work Process Three style 
+==========================================================================*/
+
+.work-process__three {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 140px 0;
+    h2 {
+        color: var(--text-white);
+    }
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 5px solid var(--primary-color-1);
+        padding-top: 75px;
+        position: relative;
+        &-single {
+            background: var(--color-5);
+            border: 1px solid var(--primary-color-1);
+            padding: 35px 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 28%;
+            &.middle {
+                width: 34%;
+            }
+            h3 {
+                color: var(--text-white);
+                font-size: 60px;
+                margin-bottom: 10px;
+            }
+            h5 {
+                color: var(--text-white);
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+            p {
+                color: #FFFFFFCC;
+                text-transform: none;
+            }
+        }
+        &-arrows {
+            img {
+                position: absolute;
+                top: 0;
+            }
+            .arrow-1 {
+                top: -10px;
+                left: 15%;
+            }
+            .arrow-2 {
+                top: -10px;
+                left: 50%;
+            }
+            .arrow-3 {
+                top: -10px;
+                right: 13%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .work-process__three-card-arrows img {
+        display: none;
+    }
+    .work-process__three-card {
+        border-top: 0;
+    }
+    .work-process__three-card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .work-process__three-card-single {
+        width: 75%;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .work-process__three-card-single.middle {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-process__three-card-single {
+        width: 100%;
+    }
+    .work-process__three-card-single.middle {
+        width: 100%;
+    }
+}
+
+/*==========================================================================
+* Work Process Four style 
+==========================================================================*/
+
+.work-process__four {
+    background-color: var(--primary-color-1);
+    padding-bottom: 110px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &-title {
+        .subtitle-one {
+            color: var(--text-white);
+            background-color: #FFFFFF26;
+        }
+        h2 {
+            color: var(--text-white);
+            margin-bottom: 30px;
+        }
+        p {
+            color: var(--color-4);
+            width: 85%;
+            text-transform: none;
+            margin-bottom: 40px;
+        }
+    }
+    .btn-one {
+        color: var(--text-white);
+        border-color: var(--bg-white);
+        &:hover {
+            background-color: var(--bg-white);
+            color: var(--text-heading-color);
+            i {
+                color: var(--text-heading-color);
+            }
+        }
+    }
+    .call-us-box {
+        display: inline-flex;
+        margin-left: 30px;
+        align-items: center;
+        &-icon {
+            display: inline-flex;
+            background: #FFFFFF1A;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 30px;
+            color: var(--text-white);
+            margin-right: 30px;
+        }
+        span {
+            font-size: 16px;
+            color: var(--text-white);
+            display: block;
+            margin-bottom: 5px;
+        }
+        a {
+            display: block;
+            font-size: 22px;
+            color: var(--text-white);
+            font-weight: 600;
+        }
+    }
+    &-single-item {
+        position: relative;
+        i {
+            background: #FFFFFF1A;
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            color: var(--text-white);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 20px;        
+        }
+        h3 {
+            position: absolute;
+            top: 15px;
+            right: 65px;
+            font-size: 80px;
+            opacity: .1;
+            color: var(--text-white);
+        }
+        h4 {
+            color: var(--text-white);
+            margin-bottom: 10px;
+        }
+        p {
+            color: var(--text-white);
+            width: 90%;
+            text-transform: none;
+        }
+    }
+}
+
+@media (max-width: 535px) {
+    .work-process__four .call-us-box {
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
