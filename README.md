@@ -15,14 +15,14 @@ Kurumsal dijital dönüşümünüzü hızlandırmak için geliştirilen, modern 
 
 # 🛠️  Kullanılan Teknolojiler
 
-Next.js
-React
-OpenAI API
-Sass
-Bootstrap
-Swiper, Slick Carousel, Lightbox, https://react-slick.neostack.com/
-Zod (form doğrulama)
-TypeScript
+!Next.js: Modern React uygulamaları için framework (SSR, SEO, hızlı performans)
+!React: Bileşen tabanlı kullanıcı arayüzü kütüphanesi
+!OpenAI API: Yapay zeka destekli chatbot için
+!Sass: Gelişmiş CSS yazımı için stil ön işlemcisi
+!Bootstrap: Hızlı ve duyarlı tasarım için CSS framework
+!TypeScript: Tip güvenliği sağlayan JavaScript üst kümesi
+!Swiper & Slick Carousel: Modern slider ve carousel bileşenleri
+!Zod: Form ve veri doğrulama için şema tabanlı doğrulama kütüphanesi
 
 Proje Yapısı
 ```
@@ -37,8 +37,9 @@ Nexdx-site-html/
 
 ```
 # 🚀 Kurulum
-
+```
 git clone https://github.com/kullanici-adi/nexdx-site-html.git
 cd nexdx-site-html
 npm install
 npm run dev
+```
