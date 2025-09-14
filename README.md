@@ -13,16 +13,13 @@ Kurumsal dijital dönüşümünüzü hızlandırmak için geliştirilen, modern 
 
 🚀 SEO & Performans: Next.js ile hızlı yükleme ve arama motoru optimizasyonu.
 
-# 🛠️  Kullanılan Teknolojiler
+# 🛠️ Kullanılan Teknolojiler
 
-!Next.js: Modern React uygulamaları için framework (SSR, SEO, hızlı performans)
-!React: Bileşen tabanlı kullanıcı arayüzü kütüphanesi
-!OpenAI API: Yapay zeka destekli chatbot için
-!Sass: Gelişmiş CSS yazımı için stil ön işlemcisi
-!Bootstrap: Hızlı ve duyarlı tasarım için CSS framework
-!TypeScript: Tip güvenliği sağlayan JavaScript üst kümesi
-!Swiper & Slick Carousel: Modern slider ve carousel bileşenleri
-!Zod: Form ve veri doğrulama için şema tabanlı doğrulama kütüphanesi
+- ⚡ **Next.js**: Modern React uygulamaları için framework (SSR, SEO, hızlı performans)  
+- ⚛️ **React**: Bileşen tabanlı kullanıcı arayüzü kütüphanesi  
+- 🤖 **OpenAI API**: Yapay zeka destekli chatbot için 
+- 📝 **TypeScript**: Tip güvenliği sağlayan JavaScript üst kümesi  
+- 🎠 **Swiper & Slick Carousel**: Modern slider ve carousel bileşenleri   
 
 Proje Yapısı
 ```
